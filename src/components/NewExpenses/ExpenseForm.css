@@ -1,0 +1,55 @@
+.new-expense_controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    background-color: aliceblue;
+}
+
+.new-expense_controls label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.new-expense_controls input {
+    background-color: aliceblue;
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid#30336b;
+    width: 20rem;
+    max-width: 100%;
+}
+
+.new-expense_controls input:focus {
+    outline: 1px solid#510674;
+    background-color: aliceblue;
+}
+
+.new-expense_actions {
+    text-align: right;
+}
+
+@media (max-width:768px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new-expense_controls {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        background-color: aliceblue;
+    }
+}
